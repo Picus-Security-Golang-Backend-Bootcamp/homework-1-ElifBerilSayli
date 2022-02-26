@@ -12,7 +12,7 @@ func List(localBookSlice []string) {
 }
 
 func Search(localBookSlice []string, bookName string) {
-	fmt.Printf("Bulunan Kitaplar:")
+	fmt.Printf("Bulunan Kitaplar: \n")
 	for _, v := range localBookSlice {
 		tempV := strings.ToLower(v)
 		tempBookName := strings.ToLower(bookName)

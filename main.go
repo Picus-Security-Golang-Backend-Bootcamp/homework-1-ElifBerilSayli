@@ -11,16 +11,15 @@ import (
 
 func main() {
 	args := os.Args
-	bookSlice := make([]string, 6)
+	bookSlice := make([]string, 5)
 	var bookNameSlice []string
 	var bookName string
 
 	bookSlice[0] = "In Search of Lost Time"
 	bookSlice[1] = "Ulysses"
 	bookSlice[2] = "Don Quixote"
-	bookSlice[3] = "One Hundred Years of Solitude"
-	bookSlice[4] = "The Great Gatsby"
-	bookSlice[5] = "The Great Gatsby Second"
+	bookSlice[3] = "The Great Gatsby"
+	bookSlice[4] = "The Great Gatsby Second"
 
 	if len(args) == 1 {
 		projectName := path.Base(args[0])
@@ -34,7 +33,7 @@ func main() {
 	if args[1] == "search" {
 
 		if len(args) == 2 {
-			fmt.Println("Arama işlemi için kitap ismi yazmalısınız !! \n  go run main.go search The Great Gatsby gibi")
+			fmt.Println("Arama işlemi için kitap ismi yazılmalı !! \n  go run main.go search The Great Gatsby gibi")
 			return
 		}
 
